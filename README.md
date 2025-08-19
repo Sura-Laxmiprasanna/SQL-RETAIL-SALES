@@ -37,7 +37,7 @@ Checked for missing or NULL values.
 
 Removed invalid transactions:
 
-DELETE FROM retail_sales
+---DELETE FROM retail_sales
 WHERE transactions_id IS NULL
    OR sale_date IS NULL
    OR sale_time IS NULL
@@ -46,6 +46,7 @@ WHERE transactions_id IS NULL
    OR quantiy IS NULL
    OR cogs IS NULL
    OR total_sale IS NULL;
+   ---
 
 2. Data Exploration
 
@@ -57,14 +58,14 @@ Product categories
 
 Key SQL Queries
 Q1. Sales on a specific date
-SELECT * FROM retail_sales 
-WHERE sale_date = '2022-11-05';
+---SELECT * FROM retail_sales 
+WHERE sale_date = '2022-11-05';---
 
 Q2. Clothing transactions with quantity >4 in Nov 2022
-SELECT * FROM retail_sales
+---SELECT * FROM retail_sales
 WHERE category='clothing'
   AND TO_CHAR(sale_date,'YYYY-MM')='2022-11'
-  AND quantiy>=4;
+  AND quantiy>=4;---
 
 Q3. Total sales per category
 SELECT category, SUM(total_sale) AS net_sale, COUNT(*) AS total_orders
