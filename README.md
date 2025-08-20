@@ -1,13 +1,7 @@
 Retail Sales Data Analysis using SQL
 
-<img width="990" height="374" alt="Screenshot 2<img width="1001" height="323" alt="Screenshot 2025-08-20 000656" src="https<img width="751" height="549" alt="Screenshot 2025-08-20 001038" src="https://github.com/user-attachments/assets/d32457c4-a030-484b-8b37-5458bc2be108" />
-://github.com/user-attachments/assets/fc6c59df-bd11-4e00-8a17-0a8<img width="988" height="422" alt="Screenshot 2025-08-20 000917" src="https://github.com/user-attachments/assets/a07f6ff0-656e-4f96-a1bf-6fef3dc820d4" />
-1<img width="441" height="474" alt="Screenshot 2025-08-20 000814" src="https://github.com/user-attachments/assets/ff853d41-b6e4-4814-8056-7017bda19541" />
-0c06f01b" />
-025-08-20 000443" src="https://github.com/user-attachments/assets/6e68dd30-33e8-4b23-afd6-5e0bb262c400" />Retail Sales Data Analysis using SQL
-
 This project demonstrates end-to-end data analysis using SQL on a retail sales dataset. It covers data cleaning, exploration, and business-focused analysis, providing actionable insights for decision-making.
-<img width="997" height="273" alt="Screenshot 2025-08-19 235816" src="https://github.com/user-attachments/assets/534569ca-2d92-4464-bb95-1630d16178ce" />
+
 
 
 Project Overview
@@ -22,7 +16,6 @@ Discover high-value customers and seasonal patterns.
 
 Support business decisions with data-driven recommendations.
 
-<img width="372" height="536" alt="Screenshot 2025-08-20 000103" src="https://github.com/user-attachments/assets/2b871391-e5c3-446f-90ae-c11f87a0f77d" />
 
 Dataset Schema
 
@@ -42,10 +35,7 @@ cogs	FLOAT	Cost of goods sold
 total_sale	FLOAT	Total sale amount
 
 Steps Performed
-1. Data Cleaning![Uploading Screenshot 2025-08
-2. <img width="799" height="427" alt="Screenshot 2025-08-20 000550" src="https://github.com/user-attachments/assets/5de387b4-ed6f-4a8f-a92e-679890b47758" />
--20 000443.png…]()
-
+1. Data Cleaning
 
 Checked for missing or NULL values.
 
@@ -62,7 +52,9 @@ WHERE transactions_id IS NULL
    OR total_sale IS NULL;
    ---
 
+
 2. Data Exploration
+ ---<img width="997" height="273" alt="Screenshot 2025-08-19 235816" src="https://github.com/user-attachments/assets/92701a19-4c5f-42d3-8f17-dd066616c076" />
 
 Total number of transactions
 
@@ -70,10 +62,14 @@ Unique customers
 
 Product categories
 
+<img width="372" height="536" alt="Screenshot 2025-08-20 000103" src="https://github.com/user-attachments/assets/8192ab24-4be1-46db-acd5-c49be6279418" />
+
 Key SQL Queries
 Q1. Sales on a specific date
 ---SELECT * FROM retail_sales 
 WHERE sale_date = '2022-11-05';---
+<img width="990" height="374" alt="Screenshot 2025-08-20 000443" src="https://github.com/user-attachments/assets/aa7ab851-f012-42f5-be49-8fded568c9f0" />
+
 
 Q2. Clothing transactions with quantity >4 in Nov 2022
 ---SELECT * FROM retail_sales
@@ -86,6 +82,9 @@ SELECT category, SUM(total_sale) AS net_sale, COUNT(*) AS total_orders
 FROM retail_sales
 GROUP BY category;
 
+
+<img width="799" height="427" alt="Screenshot 2025-08-20 000550" src="https://github.com/user-attachments/assets/4a89eb62-bdeb-4e7c-bb54-50ecab27d968" />
+
 Q4. Average age of Beauty category customers
 SELECT ROUND(AVG(age),2) AS avg_age
 FROM retail_sales
@@ -94,6 +93,8 @@ WHERE category='Beauty';
 Q5. High-value transactions (>1000)
 SELECT * FROM retail_sales
 WHERE total_sale>1000;
+
+<img width="1001" height="323" alt="Screenshot 2025-08-20 000656" src="https://github.com/user-attachments/assets/112e3029-24c0-4784-bd46-dca30b80f918" />
 
 Q6. Transactions by gender and category
 SELECT category, gender, COUNT(*) AS total_trans
@@ -115,6 +116,7 @@ FROM (
     ) sub
 ) ranked
 WHERE rnk = 1;
+<img width="441" height="474" alt="Screenshot 2025-08-20 000814" src="https://github.com/user-attachments/assets/e2cf9c6b-f5ec-47a0-8d55-26ae5df589a3" />
 
 Q8. Top 5 customers by total sales
 SELECT customer_id, SUM(total_sale) AS total_sales
@@ -127,6 +129,8 @@ Q9. Unique customers per category
 SELECT category, COUNT(DISTINCT customer_id) AS cnt_unique_cs
 FROM retail_sales
 GROUP BY category;
+
+<img width="988" height="422" alt="Screenshot 2025-08-20 000917" src="https://github.com/user-attachments/assets/58a00dd3-a50c-4bbd-a9f3-f0108a3bf26e" />
 
 Q10. Orders by time shift
 WITH hourly_sale AS (
@@ -141,6 +145,7 @@ WITH hourly_sale AS (
 SELECT shift, COUNT(*) AS total_orders
 FROM hourly_sale
 GROUP BY shift;
+<img width="751" height="549" alt="Screenshot 2025-08-20 001038" src="https://github.com/user-attachments/assets/e742af94-82ba-4c37-9aee-00de7f565297" />
 
 Insights & Recommendations
 
