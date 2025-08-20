@@ -1,6 +1,14 @@
 Retail Sales Data Analysis using SQL
 
+<img width="990" height="374" alt="Screenshot 2<img width="1001" height="323" alt="Screenshot 2025-08-20 000656" src="https<img width="751" height="549" alt="Screenshot 2025-08-20 001038" src="https://github.com/user-attachments/assets/d32457c4-a030-484b-8b37-5458bc2be108" />
+://github.com/user-attachments/assets/fc6c59df-bd11-4e00-8a17-0a8<img width="988" height="422" alt="Screenshot 2025-08-20 000917" src="https://github.com/user-attachments/assets/a07f6ff0-656e-4f96-a1bf-6fef3dc820d4" />
+1<img width="441" height="474" alt="Screenshot 2025-08-20 000814" src="https://github.com/user-attachments/assets/ff853d41-b6e4-4814-8056-7017bda19541" />
+0c06f01b" />
+025-08-20 000443" src="https://github.com/user-attachments/assets/6e68dd30-33e8-4b23-afd6-5e0bb262c400" />Retail Sales Data Analysis using SQL
+
 This project demonstrates end-to-end data analysis using SQL on a retail sales dataset. It covers data cleaning, exploration, and business-focused analysis, providing actionable insights for decision-making.
+<img width="997" height="273" alt="Screenshot 2025-08-19 235816" src="https://github.com/user-attachments/assets/534569ca-2d92-4464-bb95-1630d16178ce" />
+
 
 Project Overview
 
@@ -13,6 +21,8 @@ Understand which product categories perform best.
 Discover high-value customers and seasonal patterns.
 
 Support business decisions with data-driven recommendations.
+
+<img width="372" height="536" alt="Screenshot 2025-08-20 000103" src="https://github.com/user-attachments/assets/2b871391-e5c3-446f-90ae-c11f87a0f77d" />
 
 Dataset Schema
 
@@ -30,8 +40,12 @@ quantiy*	INT	Number of units sold (*typo in column name)
 price_per_unit	FLOAT	Price per unit
 cogs	FLOAT	Cost of goods sold
 total_sale	FLOAT	Total sale amount
+
 Steps Performed
-1. Data Cleaning
+1. Data Cleaning![Uploading Screenshot 2025-08
+2. <img width="799" height="427" alt="Screenshot 2025-08-20 000550" src="https://github.com/user-attachments/assets/5de387b4-ed6f-4a8f-a92e-679890b47758" />
+-20 000443.png…]()
+
 
 Checked for missing or NULL values.
 
